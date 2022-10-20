@@ -1,11 +1,148 @@
+<!doctype html>
 <html>
-
 <head>
-    <title>Drawing.dog</title>
+	<title>Drawing Dog</title>
+
+	<meta name="description" content="On the internet, everyone know's your a dog and that's okay.">
+	<meta name="author" content="Drawing Dog">
+	<meta property="og:title" content="Drawing Dog">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://drawing.dog">
+	<meta property="og:description" content="On the internet, everyone know's your a dog and that's okay.">
+	<!-- <meta property="og:image" content=""> -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		body {
+			background: #3E2723;
+			margin: 25px;
+		}
+
+		.dd-body-container {
+			min-height: 100vh;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.dd-content-container {
+			width: 100%;
+			max-width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+
+			background: #EFEBE9;
+			border-radius: 8px;
+			padding: 35px 20px 20px 20px;
+
+			font-family: sans-serif;
+			line-height: 1.3em;
+		}
+		.dd-content-container h1 {
+			text-align: center;
+
+			margin-top: 0px;
+			margin-bottom: 30px;
+		}
+		.dd-content-container a {
+			text-decoration: none;
+			color: #004ba0;
+		}
+		.dd-content-container a:hover {
+			text-decoration: underline;
+			color: #1976d2;
+		}
+		.dd-content-container .dd-text-emphasis {
+			font-weight: 600;
+		}
+		.dd-content-container .dd-text-container {
+			max-width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.dd-content-container .dd-text-container .dd-pipe-spacer {
+			margin-left: 0.3em;
+			margin-right: 0.3em;
+		}
+		.dd-content-container .dd-text-container a {
+			color: #3E2723;
+		}
+		.dd-content-container .dd-text-container a:hover {
+			color: #1565C0;
+		}
+
+		.dd-logo-container {
+			width: 100%;
+
+			display: flex;
+			justify-content: center;
+
+			margin-bottom: 30px;
+		}
+		.dd-logo-container img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.dd-footer-container {
+			text-align: center;
+			font-size: 0.75em;
+			color: grey;
+
+			margin-top: 30px;
+		}
+		.dd-footer-container p {
+			margin: 0px;
+		}
+		.dd-footer-container a {
+			color: grey;
+			font-weight: 600;
+		}
+		.dd-footer-container a:hover {
+			color: #1565C0;
+		}
+	</style>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha384-MYL22lstpGhSa4+udJSGro5I+VfM13fdJfCbAzP9krCEoK5r2EDFdgTg2+DGXdj+" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    Coming soon...
-</body>
+	<div class="dd-body-container">
+		<div class="dd-content-container">
+			<div class="dd-text-container">
+				<h1>
+					Drawing Dog
+				</h1>
 
+				<p style="text-align: center;">
+					<a href="" target="_blank">
+						WHOAMI
+					</a>
+					<span class="dd-pipe-spacer">|</span>
+					<a href="https://en.wikipedia.org/wiki/Border_Collie" target="_blank">
+						WHATAMI
+					</a>
+				</p>
+			</div>
+
+			<div class="dd-footer-container">
+				<p>
+					For queries or to report issues, email <a href="mailto:info@drawing.dog" target="_blank">info@drawing.dog</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function init() {
+			$(window).resize(function() {
+			  // Set body container height to center it
+			  $('.dd-body-container').attr('min-height', window.innerHeight - 50);
+			});
+		}
+		init();
+	</script>
+</body>
 </html>
