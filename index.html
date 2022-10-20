@@ -28,22 +28,32 @@
 		}
 
 		.dd-content-container {
-			width: 100%;
-			max-width: 900px;
 			margin-left: auto;
 			margin-right: auto;
 
 			background: #EFEBE9;
 			border-radius: 8px;
-			padding: 35px 20px 20px 20px;
+			padding: 55px 75px;
 
 			font-family: sans-serif;
 			line-height: 1.3em;
+		}
+		@media (max-width: 400px) {
+			.dd-content-container {
+				padding: 30px;
+			}
 		}
 		.dd-content-container h1 {
 			text-align: center;
 
 			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		.dd-content-container .dd-subtitle {
+			color: grey;
+			text-align: center;
+
+			margin-top: 20px;
 			margin-bottom: 30px;
 		}
 		.dd-content-container a {
@@ -115,9 +125,12 @@
 				<h1>
 					Drawing Dog
 				</h1>
+				<div class="dd-subtitle">
+					Software Development. Art. Music.
+				</div>
 
 				<p style="text-align: center;">
-					<a href="" target="_blank" style="text-decoration: line-through;">
+					<a href="https://twitter.com/thatdamnd0g" target="_blank">
 						WHOAMI
 					</a>
 					<span class="dd-pipe-spacer">|</span>
