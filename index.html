@@ -15,7 +15,7 @@
 
 	<style>
 		body {
-			background: #3E2723;
+			background: #b1bfca;
 			margin: 25px;
 		}
 
@@ -23,6 +23,7 @@
 			min-height: 100vh;
 
 			display: flex;
+			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 		}
@@ -31,9 +32,15 @@
 			margin-left: auto;
 			margin-right: auto;
 
-			background: #EFEBE9;
+			background: #eceff1;
 			border-radius: 8px;
 			padding: 55px 75px;
+
+			border: 1px solid #78909c;
+			border-top: unset;
+			box-shadow: 3px 3px 5px 0px #78909c;
+			-webkit-box-shadow: 3px 3px 5px 0px #78909c;
+			-moz-box-shadow: 3px 3px 5px 0px #78909c;
 
 			font-family: sans-serif;
 			line-height: 1.3em;
@@ -50,7 +57,7 @@
 			margin-bottom: 0px;
 		}
 		.dd-content-container .dd-subtitle {
-			color: grey;
+			color: #424242;
 			text-align: center;
 
 			margin-top: 20px;
@@ -77,10 +84,10 @@
 			margin-right: 0.3em;
 		}
 		.dd-content-container .dd-text-container a {
-			color: #3E2723;
+			color: #424242;
 		}
 		.dd-content-container .dd-text-container a:hover {
-			color: #1565C0;
+			color: #212121;
 		}
 
 		.dd-logo-container {
@@ -99,7 +106,7 @@
 		.dd-footer-container {
 			text-align: center;
 			font-size: 0.75em;
-			color: grey;
+			color: #424242;
 
 			margin-top: 30px;
 		}
@@ -107,11 +114,17 @@
 			margin: 0px;
 		}
 		.dd-footer-container a {
-			color: grey;
+			color: #424242;
 			font-weight: 600;
 		}
 		.dd-footer-container a:hover {
 			color: #1565C0;
+		}
+		.dd-footer-container hr {
+		    border: 0;
+		    height: 0;
+		    border-top: 1px solid rgba(0, 0, 0, 0.1);
+		    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 		}
 	</style>
 
@@ -120,6 +133,7 @@
 
 <body>
 	<div class="dd-body-container">
+		<img src="dog_flat_transparent.png"></img>
 		<div class="dd-content-container">
 			<div class="dd-text-container">
 				<h1>
@@ -130,7 +144,7 @@
 				</div>
 
 				<p style="text-align: center;">
-					<a href="https://en.wikipedia.org/wiki/Black_panther" target="_blank">
+					<a href="https://en.wikipedia.org/wiki/Jaguar" target="_blank">
 						WHOAMI
 					</a>
 					<span class="dd-pipe-spacer">|</span>
@@ -141,8 +155,12 @@
 			</div>
 
 			<div class="dd-footer-container">
+				<hr>
 				<p>
-					For queries or to report issues, email <a href="mailto:info@drawing.dog" target="_blank">info@drawing.dog</a>
+					Border collie art by <a href="https://tiggi.es/@ahto" target="_blank">Ahto</a>.
+				</p>
+				<p style="margin-top: 5px;">
+					For queries or to report issues, email <a href="mailto:info@drawing.dog" target="_blank">info@drawing.dog</a>.
 				</p>
 			</div>
 		</div>
