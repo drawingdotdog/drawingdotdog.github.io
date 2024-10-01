@@ -127,6 +127,30 @@
 		    border-top: 1px solid rgba(0, 0, 0, 0.1);
 		    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 		}
+
+		.dd-scroll-container {
+			max-height: 350px;
+
+			background-color: black;
+			overflow-x: scroll;
+			overflow-y: hidden;
+			white-space: nowrap;
+			touch-action: pan-x;
+
+			padding: 10px;
+			border-radius: 3px;
+		}
+		.dd-scroll-container img {
+			height: 320px;
+
+			margin-left: 5px;
+		}
+		.dd-scroll-container img:first-child {
+			margin-left: 0px;
+		}
+		.dd-scroll-container img:last-child {
+			margin-right: 10px;
+		}
 	</style>
 
 	<script src="jquery-3.6.1.slim.min.js"></script>
@@ -161,9 +185,31 @@
 				</div>
 
 				<div style="margin-left: auto; margin-right: auto; max-width: 380px;">
-					<p class="centered">
-						Under construction!
-					</p>
+					<h3>
+						Digital art
+					</h3>
+
+					<div class="dd-scroll-container">
+						<img src="art/digital/wolf_death.png">
+						<img src="art/digital/horse.JPG">
+						<img src="art/digital/flower.png">
+					</div>
+
+					<h3 style="margin-top: 40px;">
+						Pencil, Pen & Paper
+					</h3>
+
+					<div class="dd-scroll-container">
+						<img src="art/pencil_and_pen/coyote.jpg">
+						<img src="art/pencil_and_pen/dog.jpg">
+						<img src="art/pencil_and_pen/gryphon.jpg">
+						<img src="art/pencil_and_pen/intersection_of_nature_and_technology.jpg">
+						<img src="art/pencil_and_pen/larper.jpg">
+						<img src="art/pencil_and_pen/leopard.jpg">
+						<img src="art/pencil_and_pen/orca.jpg">
+						<img src="art/pencil_and_pen/tunic_1.jpg">
+						<img src="art/pencil_and_pen/tunic_2.jpg">
+					</div>
 				</div>
 			</div>
 
@@ -182,8 +228,8 @@
 	<script>
 		function init() {
 			$(window).resize(function() {
-			  // Set body container height to center it
-			  $('.dd-body-container').attr('min-height', window.innerHeight - 50);
+			    // Set body container height to center it
+			    $('.dd-body-container').attr('min-height', window.innerHeight - 50);
 			});
 		}
 		init();
