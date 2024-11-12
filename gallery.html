@@ -161,6 +161,10 @@
 		.dd-scroll-container img:last-child {
 			margin-right: 10px;
 		}
+
+		.nGY2ViewerToolsTopRight {
+			opacity: 1 !important;
+		}
 	</style>
 
     <script src="jquery-3.6.1.slim.min.js" type="text/javascript"></script>
@@ -267,7 +271,14 @@
 					"thumbnailWidth": 150,
 					"galleryDisplayMode": "rows",
 					"galleryMaxRows": 1,
-					"thumbnailSliderDelay": 0
+					"thumbnailSliderDelay": 0,
+					"viewerToolbar": {
+						"display": false
+					},
+   					"viewerTools": {
+        				"topLeft": "pageCounter",
+        				"topRight": "closeButton"
+      				} 
 				});
 			});
 
